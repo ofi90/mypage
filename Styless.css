@@ -1,0 +1,715 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat;
+  transition: 0.2s;
+}
+
+* a {
+  text-decoration: none;
+}
+
+* ul {
+  list-style: none;
+}
+
+.page-nav {
+  height: 8vh;
+  width: 100%;
+  padding: 0 95px;
+  background-color: rgba(8, 8, 8, 0.6);
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-nav img {
+  height: 7.5vh;
+  width: auto;
+  margin-top: 0.25vh;
+}
+
+.page-nav .nav-item {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  height: 25px;
+  margin: 0 30px;
+  font-size: 18px;
+}
+
+.page-nav .nav-item:hover {
+  color: #16cae6;
+  cursor: pointer;
+}
+
+.nav-collapse {
+  display: block;
+  display: flex;
+  flex-direction: row;
+}
+
+.hamburger {
+  width: 40px;
+  height: 30px;
+  position: relative;
+  margin-right: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger:hover .hamb-el1,
+.hamburger:hover .hamb-el2,
+.hamburger:hover .hamb-el3 {
+  border-top: 5px solid #16cae6;
+  transition: 0.4s;
+}
+
+.hamb-el1,
+.hamb-el2,
+.hamb-el3 {
+  height: 5px;
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  left: 0;
+}
+
+.hamb-el1 {
+  margin-top: -5px;
+  top: 0;
+}
+
+.hamb-el2 {
+  margin-top: -5px;
+  top: 50%;
+}
+
+.hamb-el3 {
+  bottom: 0;
+}
+
+.hamb-active .hamb-el2 {
+  display: none;
+}
+
+.hambl1-active {
+  transform: rotate(-45deg);
+  top: 50%;
+}
+
+.hambl3-active {
+  transform: rotate(45deg);
+  top: calc(50% - 5px);
+}
+
+.page-header {
+  height: 99vh;
+  background-image: url(IMG/header-page.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.textheader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 200px;
+  width: 700px;
+  margin-left: -350px;
+  margin-top: -100px;
+  text-align: center;
+  font-size: 1.3rem;
+  color: white;
+  text-align: center;
+}
+
+.textheader h1 {
+  border-bottom: 1px solid white;
+  padding: 10px;
+}
+
+.textheader h1 span {
+  color: #16cae6;
+}
+
+.textheader p {
+  font-size: 1.4rem;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+.page-ofert {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 182px;
+}
+
+.backgroundmain {
+  position: absolute;
+  width: 100%;
+  height: 66%;
+  bottom: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+.header-offert {
+  height: 195px;
+  border-bottom: 1px solid grey;
+  font-size: 48px;
+  color: #242424;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ofertsbox {
+  height: 400px;
+  display: flex;
+  margin-top: 152px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ofert {
+  height: 100%;
+  width: 25%;
+  font-size: 24px;
+}
+
+.ofert img {
+  height: 80px;
+  width: 77px;
+  margin-bottom: 52px;
+}
+
+.ofert h3 {
+  color: #242424;
+}
+
+.ofert p {
+  font-size: 17px;
+  line-height: 24px;
+  color: #555555;
+  margin-top: 26px;
+}
+
+.ofert:nth-child(2) {
+  margin-left: 0 47px;
+}
+
+.bigofert {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 400px;
+}
+
+.bigofert h2 {
+  margin-top: 30px;
+  font-size: 36px;
+}
+
+.bigofert p {
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.textbox {
+  width: 510px;
+  height: 281px;
+}
+
+.textbox p {
+  margin-top: 50px;
+  font-size: 17px;
+  line-height: 24px;
+  color: white;
+
+}
+
+.bigofert:last-child {
+  text-align: left;
+}
+
+.bigofert:last-child .textbox h2 {
+  color: white;
+}
+
+.bigofert:last-child .textbox p {
+  color: white;
+}
+
+.tablet {
+  height: 550px;
+  width: 500px;
+}
+
+.laptop {
+  width: 665px;
+  height: 439px;
+}
+
+.porfoliobox {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.description {
+  height: 70%;
+  width: 100%;
+  display: flex;
+}
+
+.primaryphoto {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.primaryphoto img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.02);
+}
+
+.primaryphoto img:hover {
+  transform: scale(1.04);
+  transition: 1s;
+}
+
+.textboxporoflio {
+  width: 50%;
+  height: 100%;
+  padding: 50px;
+}
+
+.textboxporoflio h2 {
+  font-size: 72px;
+}
+
+.textboxporoflio p {
+  color: white;
+  margin-top: 50px;
+  line-height: 30px;
+}
+
+.itemphoto {
+  height: 30%;
+  width: 100%;
+  display: flex;
+}
+
+.poroflioitem {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.poroflioitem img {
+  height: 100%;
+  width: 100%;
+  transform: scale(1.01);
+}
+
+.poroflioitem img:hover {
+  transform: scale(1.1);
+  transition: 2s;
+}
+
+.whoiam {
+  height: 35vh;
+  width: 100%;
+  font-size: 34px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.btnshow {
+  height: 70px;
+  width: 230px;
+  background-color: #16cae6;
+  margin-top: 25px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.btnshow a {
+  color: white;
+}
+
+.btnshow:hover {
+  background-color: white;
+  border: 5px solid #16cae6;
+}
+
+.btnshow:hover a {
+  color: #16cae6;
+}
+
+.contact {
+  position: relative;
+  height: 720px;
+  width: 100%;
+  background-image: url(IMG/contact-page.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 100px 182px;
+}
+
+.contacttext {
+  height: 377px;
+  width: 50%;
+  z-index: 1;
+}
+
+.contacttext h2 {
+  font-size: 65px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.contacttext p {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 48px;
+  color: #2ebaee;
+}
+
+.contacttext span {
+  color: #878787;
+}
+
+form {
+  color: white;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.nick {
+  width: 636px;
+  height: 61px;
+  border-radius: 3px;
+  border: 1px solid #8a8a8a;
+  background-color: transparent;
+  padding: 22px;
+  color: white;
+}
+
+.email {
+  width: 636px;
+  height: 61px;
+  border-radius: 3px;
+  border: 1px solid #8a8a8a;
+  background-color: transparent;
+  z-index: 1;
+  padding: 22px;
+  color: white;
+  margin-top: 20px;
+}
+
+.field-error {
+  color: white;
+  border-bottom: 1px solid red;
+  border-left: 1px solid red;
+  border-right: 1px solid red;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.confirm {
+  margin-top: 10px;
+}
+
+textarea {
+  width: 636px;
+  height: 204px;
+  border-radius: 3px;
+  background-color: transparent;
+  padding: 22px;
+  color: white;
+  margin-top: 20px;
+  border: 1px solid #8a8a8a;
+}
+
+.send {
+  width: 151px;
+  height: 44px;
+  background-color: #16cae6;
+  border-radius: 30px;
+  border: 2px solid #16cae6;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.socialbox {
+  height: 58px;
+  width: 60%;
+  margin-top: 73px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.socialbox img {
+  height: 58px;
+  width: auto;
+}
+
+.footer-page {
+  height: 120px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 0 170px 0 130px;
+  color: #b2b2b2;
+}
+
+.HoverEffect {
+  opacity: 1;
+}
+
+.HoverEffect:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .page-nav {
+    padding: 0px;
+  }
+  .page-ofert {
+    padding: 2%;
+  }
+  .ofertsbox {
+    padding: 0 30px;
+    width: 95%;
+    margin: 100px auto;
+  }
+  .ofert {
+    margin-bottom: 80px;
+  }
+  .bigofert {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .bigofert:first-child {
+    flex-direction: column-reverse;
+  }
+  .bigofert:last-child {
+    text-align: center;
+  }
+  .laptop {
+    width: 90%;
+    height: auto;
+  }
+  .tablet {
+    width: 90%;
+    height: auto;
+  }
+  .header-offert {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .socialbox {
+    width: 100%;
+  }
+  .textboxporoflio {
+    text-align: center;
+    width: 100%;
+  }
+  .description {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .primaryphoto {
+    height: 25vh;
+    width: 100%;
+  }
+  .itemphoto {
+    height: 500px;
+    display: block;
+    background-color: red;
+  }
+  .poroflioitem {
+    width: 50%;
+    float: left;
+  }
+  .backgroundmain {
+    height: 40%;
+  }
+  .tablet {
+    width: 80%;
+  }
+  .contact {
+    justify-items: center;
+    flex-direction: column;
+    height: 1200px;
+  }
+  .contacttext {
+    margin-top: 100px;
+    width: 100%;
+  }
+  form {
+    margin-top: 150px;
+  }
+  .footer-page {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav-collapse {
+    border-top: solid 2px rgba(8, 8, 8, 0.5);
+    border-bottom: solid 2px rgba(8, 8, 8, 0.2);
+    position: absolute;
+    top: 8vh;
+    height: 20vh;
+    width: 100%;
+    background-color: rgba(8, 8, 8, 0.6);
+    z-index: 3;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .hamburger,
+  .menubtn {
+    display: block;
+  }
+  .textheader {
+    height: 200px;
+    width: 90%;
+    margin-left: -45%;
+    margin-top: -100px;
+    font-size: 0.9rem;
+  }
+  .ofertsbox {
+    flex-direction: column;
+    align-items: center;
+    height: 1000px;
+    width: 90%;
+  }
+  .ofert {
+    text-align: center;
+    width: 90%;
+  }
+  .ofert p {
+    font-size: 14px;
+  }
+  .bigofert h2 {
+    font-size: 1.2rem;
+  }
+  .bigofert .textbox {
+    width: 90%;
+  }
+  .bigofert .textbox p {
+    font-size: 14px;
+  }
+  .textboxporoflio h2 {
+    font-size: 16vw;
+  }
+  .whoiam h2 {
+    font-size: 28px;
+  }
+  .socialbox {
+    height: 58px;
+    width: 60%;
+    margin-top: 73px;
+  }
+  .socialbox img {
+    height: 40px;
+    width: auto;
+  }
+  .contact {
+    padding: 0px;
+  }
+  .contact .contacttext {
+    width: 70%;
+  }
+  .contact .contacttext h2 {
+    font-size: 16vw;
+  }
+  .contact .contacttext p {
+    font-size: 6vw;
+  }
+  .contact form {
+    width: 80vw;
+  }
+  .contact .email {
+    width: 80vw;
+  }
+  .contact .nick {
+    width: 80vw;
+  }
+  .contact textarea {
+    width: 80vw;
+  }
+  .contact .whoiam {
+    height: 50vh;
+  }
+  .contact .socialbox {
+    margin-top: 20px;
+    width: 70%;
+  }
+}
+
+.elem-is-busy {
+  position: relative;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.elem-is-busy::after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-right-color: rgba(0, 0, 0, 0.7);
+  transform: translate(-50%, -50%) rotate(0deg);
+  content: '';
+  animation: rotateSingleLoading 0.3s infinite linear;
+  z-index: 10;
+}
+
+@keyframes rotateSingleLoading {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
